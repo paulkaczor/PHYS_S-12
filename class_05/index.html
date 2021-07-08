@@ -87,9 +87,10 @@ https://templatemo.com/tm-506-tinker
 
       </div>
     </div>-->
-    <h1>Class 05 Documentation</h1>
+  <!--  <h1>Class 05 Documentation</h1>
     <h2>Background Knowledge</h2>
-    <p>Starting off learning how to integrate for() loops into arduino IDE we want to connect an LED to pin 10 with a 470 ohm resistor in series.</p>
+    <p>
+      Starting off learning how to integrate for() loops into arduino IDE we want to connect an LED to pin 10 with a 470 ohm resistor in series.</p>
       <img src='./img/class_05_img/arduinoConditionals1.png' alt='arduinoConditionals1'> <br> <br>
     <p>A blinking function can be achieved using something like the following for() which in the case causes the LED in output pin 9 to blink at maximum brightness alternating every 30 milliseconds.</p>
       <img src='./img/class_05_img/arduinoConditionals1Code.png' alt='arduinoConditionals1Code'> <br> <br>
@@ -102,12 +103,13 @@ https://templatemo.com/tm-506-tinker
     <li>Program a microcontroller to produce an output using at least one button for input. Include a conditional statement and a for() loop.</li>
     </ol>
     <p><a href="https://www.youtube.com/watch?v=PC15jBx2UxI">Pushbutton Digital Input With Arduino in Tinkercad</a></p>
-      <img src='./img/class_05_img/pushButton.png' alt='pushButton'> <br> <br>
+      <img src='./img/class_05_img/pushButton .png' alt='pushButton'> <br> <br>
     <p>I started by following the tutorial provided in the link video above to just get a simple pushbutton circuit up and running. The goal is to have the pushbutton act as an input and control the LED such that when the button is pressed it sets the LED to HIGH and when the button is not pressed the LED is LOW. This can be accomplished with the following code using a conditional if() else() statement.</p>
     <ol start="2">
       <img src='./img/class_05_img/pushButtonCode.png' alt='pushButtonCode'> <br> <br>
     <li>Think about your final project and any additional components you might want. Start working on the 3D design for your project, especially components you might want to be lasercut or 3D printed. We can't make any promises, but we will do our best to accommodate requests within reason. Next Tuesday the 13th is the deadline for requests, in order for us to print/cut, mail, and get to you in time for you to assemble your project. (This will also be your assignment for next class). Please feel free to send us your designs prior to that for feedback. Please also feel free to use models from this collection of 3D models of kit components, or from other online collections like grabcad.com or Thingiverse.</li>
     </ol>
+  -->
 
       <!-- FIRST ROW -->
       <div class="row">
@@ -122,124 +124,35 @@ https://templatemo.com/tm-506-tinker
                 Starting off learning how to integrate for() loops into arduino IDE we want to connect an LED to pin 10 with a 470 ohm resistor in series.
                   <img src='./img/class_05_img/arduinoConditionals1.png' alt='arduinoConditionals1'> <br> <br>
               </p>
-<
-            After seeing the example of the Disney Animatronics lab and the
-            software they use to reverse engineer certain pathways into linkages
-            designs, I was reminded of a brutally time consuming problem set
-            question from Howard Georgi's Physics 15a course I took sophomore year.
-          </p>
-          <p>
-            <img src='./img/class_04_img/pendulumLectureNotes.png' alt='lecture notes'> <br> <br>
+              <p>
+                A blinking function can be achieved using something like the following for() which in the case causes the LED in output pin 9 to blink at maximum brightness alternating every 30 milliseconds.
+                <img src='./img/class_05_img/arduinoConditionals1.png' alt='arduinoConditionals1'> <br> <br>
+              </p>
+              <p>
+                We want to expand on these ideas by including a potentiometer at input A0 to control the frequency of the blinking. The potentiometer input in this case should be used to control the maximum for the for() controlling LED brightness.
+                  <img src='./img/class_05_img/arduinoConditional3.png' alt='arduinoConditionals3'>
+              </p>
+              <p>
+                We can see that when integrating the potentiometer into the arduino we want the wiper pin which controls the variable resistance to be input bin at A0. The following code can be used to have the potentiometer control the brightness of the LED. Also note that the sensor values range from 0-1023 while the analogWrite() function wants values between 0-255, and a map function is required to convert between the ranges.
+                  <img src='./img/class_05_img/arduinoConditionals3Code.png' alt='arduinoConditionals3Code'> <br> <br>
+              </p>
+              <h3>Assignment</h3>
+              <p>
+                1. Program a microcontroller to produce an output using at least one button for input. Include a conditional statement and a for() loop.
+              </p>
 
-            The final deliverable of the problem set was to generate a simulation of the motion
-            of the pendulum with variable point masses and comparying simulations
-            given different initial potential energy and begining inertia. Similar to:
-              <iframe src="https://giphy.com/embed/3o6oznaeHpJwhFc7GE" width="480" height="164" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/pendulum-wolfram-language-wolflang-3o6oznaeHpJwhFc7GE"></a></p>
-
-          </p>
-
-          <p>
-            Eventually we all realized that one of the main takeaways was to show
-            us how unpredictable to motion is and how dificult it can be to simulate
-            it.
-
-            But I remember thinking how peculiar it was that such a seemingly simple
-            mechanism could deviate into such erratic behavior so quickly.
-          </p>
-
-
-
-          <!--  Here is a fun old reference for mechanisms: <a href='https://books.google.com/books?vid=HARVARD:32044091965889&printsec=titlepage#v=onepage&q&f=false' > 507 Mechanical Movements</a>, with animations <a href='http://507movements.com/'> here</a>. <br> <br>
-
-            <a href='http://mars1980.github.io/resources/making_things_move.pdf'>Making Things Move</a>, chapters 4 and 8. <br> <br>
-
-            Use design/simulation tools for <a href='https://dynref.engr.illinois.edu/aml.html'>four-bar linkages</a> or other mechanisms. <br> <br>
-
-            <iframe width="937" height="527" src="https://www.youtube.com/embed/rAktZZSBHnA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-            In this tutorial, the author uses a custom software to sketch a four-bar linkage system (you could use <a href='https://dynref.engr.illinois.edu/aml.html'>this link</a> instead). He then explains how to build a motion study using Fusion 360 to preview the motion (minute 8). <br> <br>
-
-            <iframe width="937" height="530" src="https://www.youtube.com/embed/tURgE38tdRs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <a href='https://www.mekanizmalar.com/'>The Book of Mechanics of Machines</a><br> <br>
-
-            <iframe width="937" height="493" src="https://www.youtube.com/embed/dPEBbcDiWNs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <a href='https://www.youtube.com/user/thang010146/featured'>Thang010146's 3200 mechanisms</a>
-          -->
-
-
-          </p>
-
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/rAktZZSBHnA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/UAxqGRzsC7E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-
-
-      	<!--	<h3> Mechanism Design </h3>
-      		<p>
-      			Here is a fun old reference for mechanisms: <a href='https://books.google.com/books?vid=HARVARD:32044091965889&printsec=titlepage#v=onepage&q&f=false' > 507 Mechanical Movements</a>, with animations <a href='http://507movements.com/'> here</a>. <br> <br>
-
-      			<a href='http://mars1980.github.io/resources/making_things_move.pdf'>Making Things Move</a>, chapters 4 and 8. <br> <br>
-
-      			Use design/simulation tools for <a href='https://dynref.engr.illinois.edu/aml.html'>four-bar linkages</a> or other mechanisms. <br> <br>
-
-      			<iframe width="937" height="527" src="https://www.youtube.com/embed/rAktZZSBHnA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-      			In this tutorial, the author uses a custom software to sketch a four-bar linkage system (you could use <a href='https://dynref.engr.illinois.edu/aml.html'>this link</a> instead). He then explains how to build a motion study using Fusion 360 to preview the motion (minute 8). <br> <br>
-
-      			<iframe width="937" height="530" src="https://www.youtube.com/embed/tURgE38tdRs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      			<a href='https://www.mekanizmalar.com/'>The Book of Mechanics of Machines</a><br> <br>
-
-      			<iframe width="937" height="493" src="https://www.youtube.com/embed/dPEBbcDiWNs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      			<a href='https://www.youtube.com/user/thang010146/featured'>Thang010146's 3200 mechanisms</a>
-
-
-
-      		</p>
-
-      		<h3> Rapid Prototypes </h3>
-
-      		<p> Some examples of kinetic sculptures made with common household supplies can be seen from last summer's course, <a href='https://silviafesta.github.io/PHYS_S-12/Assignments/assignment3.html'>especially Silvia's clever use of string</a>, <a href='https://michelleyl78.github.io/PHYS_S-12/04_class/04_class.html'>Michelle's method of making circular cams</a>, and <a href='https://wujibi123.github.io/PHYS_S-12/04_RapidPrototyping/index.html'>Dan's mechanism</a>. </p>
-
-      		<p>
-      			<img src='./linkage.jpg' alt='linkage design'> <br> <br>
-
-      			Here is an example of a simple four-bar mechanism made with components in our course kit. I used <a href='https://dynref.engr.illinois.edu/aml.html'>this website</a> to find the lengths of the bars. The white 3D-printed hub with a black wire prong attached forms the "crank" bar (the length of the bar is the hub's radius). The "rocker" is made with a length of red solid-core wire (twisted for extra stiffness), attached to the cardboard box with an M3 bolt and nut (there's a small loop in the wire for the bolt to pass through). Another M3 bolt and nut connect the rocker to the floating link (yellow). The "ground link" is the invisible line between the motor shaft and the M3 bolt through the cardboard.
-      		</p>
-      		<p>
-      			<video width="320" height="240" controls>
-      				<source src="./linkage.mp4" type="video/mp4">
-      			</video> <br>
-
-
-      		</p>
-
-      		<p>
-      			<img src='./ganson0.jpg' alt='ganson gear design'> <br> <br>
-
-      			It's difficult to make very precise gears at home, but precision may be overrated. Here's an attempt to make Arthur Ganson-inspired gears using solid-core wire. I used a piece of wood from the kit (anything around this size could work) to coil the wire around. Note that there are two different white 3D printed components in the above image. One has the D-shaped hole to receive the motor shaft, the other has a hole large enough for a bearing and an M5 bolt (it's supposed to be a timing belt pulley, but we can use it to make a Ganson gear). </p>
-
-      			<img src='./ganson1.jpg' alt='ganson gear design'> <br> <br>
-
-      			<p> After pulling the wire off of the wood, I bent the coil around the 3D printed part so that it was loosely in the right position. I then threaded a different color wire through the coil, and then tightened that wire (by twisting its ends together) to cinch the coil to the 3D printed part. I then adjusted the spacing to be even. It seems to work!
-
-
-      		</p>
-      		<p>
-      			<video width="320" height="240" controls>
-      				<source src="./ganson.mp4" type="video/mp4">
-      			</video>
-
-      		</p>
-        -->
-
-      		<!-- <h3> Examples </h3>
-      		<p>
-
-      			Rob's <a href='https://roberthart56.github.io/projects/telephone_box/index.html' >example</a> of using simple materials and joining in a prototype. And some  <a href='https://roberthart56.github.io/SCFAB/SC_lab/Projects/Quick_prototypes/index.html'> extremely rapid</a> prototypes<br>
-      		</p>  -->
-
+              <p>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/PC15jBx2UxI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </p>
+              <p>
+              I started by following the tutorial provided in the link video above to just get a simple pushbutton circuit up and running. The goal is to have the pushbutton act as an input and control the LED such that when the button is pressed it sets the LED to HIGH and when the button is not pressed the LED is LOW. This can be accomplished with the following code using a conditional if() else() statement.
+                  <img src='./img/class_05_img/pushButton.png' alt='pushButton'> <br> <br>
+              </p>
+              <p>
+                <img src='./img/class_05_img/pushButton.png' alt='pushButton'> <br> <br>
+              I started by following the tutorial provided in the link video above to just get a simple pushbutton circuit up and running. The goal is to have the pushbutton act as an input and control the LED such that when the button is pressed it sets the LED to HIGH and when the button is not pressed the LED is LOW. This can be accomplished with the following code using a conditional if() else() statement.
+                  <img src='./img/class_05_img/pushButtonCode.png' alt='pushButtonCode'> <br> <br>
+              </p>
       	</div >
       </div>
 
