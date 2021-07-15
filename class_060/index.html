@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!--
+Tinker CSS Template
+https://templatemo.com/tm-506-tinker
+-->
+        <title>Class 06</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="../css/fontAwesome.css">
+        <link rel="stylesheet" href="../css/hero-slider.css">
+        <link rel="stylesheet" href="../css/owl-carousel.css">
+        <link rel="stylesheet" href="../css/templatemo-style.css">
+        <link rel="stylesheet" href="../css/lightbox.css">
+        <link rel="stylesheet" href="./style.css">
+
+        <script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+
+<body>
+  <div class="header">
+      <div class="container">
+          <nav class="navbar navbar-inverse" role="navigation">
+              <div class="navbar-header">
+                  <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a href="#" class="navbar-brand scroll-top">PHYS S-12</a>
+              </div>
+              <!--/.navbar-header-->
+              <div id="main-nav" class="collapse navbar-collapse">
+                  <ul class="nav navbar-nav">
+                      <li><a href="../index.html#home">Home</a></li>
+                      <li><a href="../index.html#about">Classes</a></li>
+                      <li><a href="../index.html#portfolio">Portfolio</a></li>
+                      <!--<li><a href="#" class="scroll-link" data-id="blog">Blog</a></li>-->
+                      <li><a href="../index.html#contact-us">About Me</a></li>
+                  </ul>
+              </div>
+              <!--/.navbar-collapse-->
+          </nav>
+          <!--/.navbar-->
+      </div>
+      <!--/.container-->
+  </div>
+  <!--/.header-->
+  <div class="parallax-content baner-content" id="home">
+    <div class="container">
+      <div class="text-content">
+        <h2><em>Class</em> <span>06:</span> 3D Design and Printing</h2>
+      </div>
+    </div>
+  </div>
+
+    <div class="fluid-container" id="write-up">
+      <div class="container">
+        <div class="row">
+          <h3> Assignment </h3>
+          <p> 1. Design and prepare to print (i.e. slice) either (a) a component you need for your final project or (b) a small object that could not be (easily) made by subtractive methods. Upload your 3D model file (e.g. .f3z), STL file, and sliced gcode file to your documentation.</p>
+          <p> 2. Scan something using a photogrammetry application, if you can get access to one. </p>
+        </div>
+        <div class="row">
+          <h3> Background Knowledge </h3>
+          <p> I started by thinking about useful applications of 3D printing I could implement into my final prject design.
+           Knowing that the eventual goal of designing my final RFID reader would be to have something that it is able to
+           be mounted on the hooks of shipyard cranes a simple housing unit for the reader design seemed a logical place to start.</p>
+           <p> While looking around Thingiverse and TinkerCAD I came across <a href="https://www.thingiverse.com/thing:994827">this design</a>
+             and <a href="https://www.tinkercad.com/things/l5p5QC6hNqA-rfid-rc522-case">this design</a> for a snug fit case for an arduino uno
+             and thought if I could make something similar with a slightly larger housing to be able to enclose
+             an rcf522 as well that would be a good start.</p>
+           <p>Following the tutorial below I made a housing in Fusion360 that would fit our Metro M0 making sure to double check a few dimensions
+             with the micrometer along the way.</p>
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/E0bhdr84FNU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             <p> I also used the two following tutorials to validate the conecpt of mydesign before
+               purchasing the addiotnal rc522 reader: <a href="https://circuits4you.com/2018/10/03/interfacing-of-rfid-rc522-with-arduino-uno/">Interfacing of RFID RC522 with Arduino UNO</a> and
+               <a href="https://github.com/miguelbalboa/rfid">https://github.com/miguelbalboa/rfid</a> </p>
+        </div>
+        <div class="row">
+          <h3> Deliverables: 3D Design </h3>
+          <p> Here's the initial Fusion 360 design with <a download href="files\MetroExpressCase_v4.f3d">download link</a>, with some stills of the process.</p>
+          <iframe src="https://myhub.autodesk360.com/ue2f96445/shares/public/SH919a0QTf3c32634dcf9cafd1c17ef7f8d6?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+            <div class="row">
+              <div class="col-md-4">
+                <img src="img\Fusion360_1625862682.png" class="img-responsive margin" style="width:100%" alt="">
+              </div>
+              <div class="col-md-4">
+                <img src="img\Fusion360_1625862746.png" class="img-responsive margin" style="width:100%" alt="">
+              </div>
+              <div class="col-md-4">
+                <img src="img\Fusion360_1625862757.png" class="img-responsive margin" style="width:100%" alt="">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <img src="img\Fusion360_1625862795.png" class="img-responsive margin" style="width:100%" alt="">
+              </div>
+              <div class="col-md-4">
+                <img src="img\Fusion360_1625862831.png" class="img-responsive margin" style="width:100%" alt="">
+              </div>
+              <div class="col-md-4">
+                <img src="img\Fusion360_1625863307.png" class="img-responsive margin" style="width:100%" alt="">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <img src="img\Fusion360_1625863348.png" class="img-responsive margin" style="width:100%" alt="">
+              </div>
+              <div class="col-md-4">
+                <img src="img\Fusion360_1625863419.png" class="img-responsive margin" style="width:100%" alt="">
+              </div>
+            </div>
+        </div>
+        <div class="row">
+          <h4> Deliverables: Slicing and Gcode </h4>
+          <p> The .stls for the top and bottom case can be downloaded here: <a download href="files\CaseTop.stl">casetop</a> and <a download href="class_06\files\CaseBottom.stl">casebottom</a> and below is a rendering of the slicing using Prusa Slicer. </p>
+          <img src="img\09_07_2021_1625862227.gif" class="img-responsive margin" style="width:100%" alt="">
+          <p> Finally the gcode can be downloaded <a download href="\files\CaseBottom_0.3mm_PLA_MK3S_1h33m.gcode">here</a>. </p>
+            <img src="img\atom_1625862577.png" class="img-responsive margin" style="width:100%" alt="">
+        </div>
+        <div>
+          <h4> Deliverables: Photogrammerty </h4>
+          <p> I attempted to use Meshroom for a photogrammetry softwre and made several key findings but ultimately was unable to make it fully work. I was able to succesfully install the program and run it
+          eventually the renderings would fail partway through processing. I tried to run a test to see whether it was Meshroom, my computer's hardware, or the photos I was attempting to use by using a set of
+        demo pictures that were guaranteed to work (if your computer is capable) and after several hours of processing failed again. I was eventually able to find the following in the command line for Meshroom
+      notifying me that my computer's gpu was insufficient. I was able to generate a little less than a third of the final mesh though. </p>
+          <img src="img\Meshroom_1626200711.png" class="img-responsive margin" style="width:100%" alt="">
+            <img src="img\13_07_2021_1626202253.gif" class="img-responsive margin" style="width:100%" alt="">
+            <img src="img\Meshroom_1626200682.png" class="img-responsive margin" style="width:100%" alt="">
+        </div>
+      </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <div class="logo">
+                        <a class="logo-ft scroll-top" href="#"><em>T</em>inker</a>
+                        <p>Copyright &copy; 2021 Paul Kaczor
+                       <!--<br>Design: TemplateMo</p>-->
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="location">
+                        <h4>Location</h4>
+                        <ul>
+                            <li>Rochester <br>MN 55901 </li>
+                            <!--<li>12 Republic Blvd, <br>Singapore 038975</li>-->
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-12">
+                    <div class="contact-info">
+                        <h4>More Info</h4>
+                        <ul>
+                            <li><em>Phone</em>: (320)248-1958</li>
+                            <li><em>Email</em>: paulkaczor@college.harvard.edu</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-12">
+                    <div class="connect-us">
+                        <h4>Social</h4>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google"></i></a></li>
+                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="../js/vendor/bootstrap.min.js"></script>
+
+    <script src="../js/plugins.js"></script>
+    <script src="../js/main.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        // navigation click actions
+        $('.scroll-link').on('click', function(event){
+            event.preventDefault();
+            var sectionID = $(this).attr("data-id");
+            scrollToID('#' + sectionID, 750);
+        });
+        // scroll to top action
+        $('.scroll-top').on('click', function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop:0}, 'slow');
+        });
+        // mobile nav toggle
+        $('#nav-toggle').on('click', function (event) {
+            event.preventDefault();
+            $('#main-nav').toggleClass("open");
+        });
+    });
+    // scroll function
+    function scrollToID(id, speed){
+        var offSet = 50;
+        var targetOffset = $(id).offset().top - offSet;
+        var mainNav = $('#main-nav');
+        $('html,body').animate({scrollTop:targetOffset}, speed);
+        if (mainNav.hasClass("open")) {
+            mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+            mainNav.removeClass("open");
+        }
+    }
+    if (typeof console === "undefined") {
+        console = {
+            log: function() { }
+        };
+    }
+    </script>
+
+</body>
+</html>
